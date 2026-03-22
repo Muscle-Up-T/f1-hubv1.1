@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/sw.js",
+      "headers": { "Cache-Control": "no-cache" },
+      "dest": "/sw.js"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/manifest.json"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
